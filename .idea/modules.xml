@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CSIReports.iml" filepath="$PROJECT_DIR$/CSIReports.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CSIReports_main.iml" filepath="$PROJECT_DIR$/.idea/modules/CSIReports_main.iml" group="CSIReports" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CSIReports_test.iml" filepath="$PROJECT_DIR$/.idea/modules/CSIReports_test.iml" group="CSIReports" />
+    </modules>
+  </component>
+</project>

@@ -24,5 +24,56 @@ public class User {
     @Column(nullable = false)
     private boolean allReports;
 
+    public User()
+    {
+    }
 
+    public User(int id, String username, String password, boolean personalReports, boolean allReports)
+    {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.personalReports = personalReports;
+        this.allReports = allReports;
+    }
+
+    public String getUsername()
+    {
+        return username;
+    }
+
+    public void setUsername(String username)
+    {
+        this.username = username;
+    }
+
+    public String getPassword()
+    {
+        return password;
+    }
+
+    public void setPassword(String password)
+    {
+        this.password = password;
+    }
+
+    public boolean isPersonalReports()
+    {
+        return personalReports;
+    }
+
+    public void setPersonalReports(boolean personalReports)
+    {
+        this.personalReports = personalReports;
+    }
+
+    public boolean isAllReports()
+    {
+        return allReports;
+    }
+
+    public void setAllReports(boolean allReports)
+    {
+        this.allReports = allReports;
+    }
 }

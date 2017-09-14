@@ -1,7 +1,6 @@
 package com.porter.csi.dailyreports.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * Created by jeffryporter on 9/13/17.
@@ -10,4 +9,14 @@ import javax.persistence.Table;
 @Table(name = "reports")
 public class Report
 {
+    @Id
+    @GeneratedValue
+    private int id;
+
+    @Column(nullable = false)
+    User user;
+
+
+
+
 }

@@ -19,22 +19,37 @@ public class User {
     private String password;
 
     @Column(nullable = false)
-    private boolean personalReports;
+    private boolean fieldSupervisor;
 
     @Column(nullable = false)
-    private boolean allReports;
+    private boolean manager;
+
+    @Column(nullable = false)
+    private boolean superUser;
 
     public User()
     {
     }
 
-    public User(int id, String username, String password, boolean personalReports, boolean allReports)
+    public User(int id, String username, String password, boolean fieldSupervisor, boolean manager, boolean superUser)
     {
         this.id = id;
         this.username = username;
         this.password = password;
-        this.personalReports = personalReports;
-        this.allReports = allReports;
+        this.fieldSupervisor = fieldSupervisor;
+        this.manager = manager;
+        this.superUser = superUser;
+    }
+
+
+    public int getId()
+    {
+        return id;
+    }
+
+    public void setId(int id)
+    {
+        this.id = id;
     }
 
     public String getUsername()
@@ -57,23 +72,33 @@ public class User {
         this.password = password;
     }
 
-    public boolean isPersonalReports()
+    public boolean isFieldSupervisor()
     {
-        return personalReports;
+        return fieldSupervisor;
     }
 
-    public void setPersonalReports(boolean personalReports)
+    public void setFieldSupervisor(boolean fieldSupervisor)
     {
-        this.personalReports = personalReports;
+        this.fieldSupervisor = fieldSupervisor;
     }
 
-    public boolean isAllReports()
+    public boolean isManager()
     {
-        return allReports;
+        return manager;
     }
 
-    public void setAllReports(boolean allReports)
+    public void setManager(boolean manager)
     {
-        this.allReports = allReports;
+        this.manager = manager;
+    }
+
+    public boolean isSuperUser()
+    {
+        return superUser;
+    }
+
+    public void setSuperUser(boolean superUser)
+    {
+        this.superUser = superUser;
     }
 }

@@ -31,7 +31,7 @@ public class Report
     private double humidity;
 
     @Column()
-    private String Conditions;
+    private String conditions;
 
     @Column(nullable = false)
     private String siteSupervisor;
@@ -66,7 +66,7 @@ public class Report
         this.lastEdited = lastEdited;
         this.temperature = temperature;
         this.humidity = humidity;
-        Conditions = conditions;
+        this.conditions = conditions;
         this.siteSupervisor = siteSupervisor;
         this.siteWorkers = siteWorkers;
         this.workPerformed = workPerformed;
@@ -128,12 +128,12 @@ public class Report
 
     public String getConditions()
     {
-        return Conditions;
+        return conditions;
     }
 
     public void setConditions(String conditions)
     {
-        Conditions = conditions;
+        this.conditions = conditions;
     }
 
     public String getSiteSupervisor()

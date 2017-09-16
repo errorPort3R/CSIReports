@@ -5,4 +5,5 @@ package com.porter.csi.dailyreports.entities;
  */
 public class Work
 {
+    protected
 }

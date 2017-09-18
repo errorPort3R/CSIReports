@@ -47,7 +47,7 @@ public class ReportsRestController
         users.delete(id);
     }
 
-    @RequestMapping(path = "/#/user/{id}", method = RequestMethod.GET)
+    @RequestMapping(path = "/user/{id}", method = RequestMethod.GET)
     public User getUser(@PathVariable("id") int id)
     {
         return users.findOne(id);

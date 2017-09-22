@@ -1,8 +1,13 @@
 package com.porter.csi.dailyreports.services;
 
+import com.porter.csi.dailyreports.entities.Report;
+import org.springframework.data.repository.CrudRepository;
+
 /**
  * Created by jeffryporter on 9/13/17.
  */
-public interface ReportRepository
+public interface ReportRepository extends CrudRepository<Report, Integer>
 {
+    public Iterable<Report> findByUser(String user);
+    public Iterable<Report> findByJobCode(String jobCode);
 }

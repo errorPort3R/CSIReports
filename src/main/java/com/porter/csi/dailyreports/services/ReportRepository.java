@@ -10,4 +10,5 @@ public interface ReportRepository extends CrudRepository<Report, Integer>
 {
     public Iterable<Report> findByUser(String user);
     public Iterable<Report> findByJobCode(String jobCode);
+    public Iterable<Report> findByJobName(String jobName);
 }
